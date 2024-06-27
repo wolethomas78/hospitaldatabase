@@ -27,6 +27,11 @@
 
 #### 6. Conclusion.
 
+### 1. Conceptual Design
+##### Here is the EER diagram generated based on our project description and real-life experiences.
+### 1.1 EER Diagram with all assumptions
+![](ER_hospital.png)
+
 
 
 
