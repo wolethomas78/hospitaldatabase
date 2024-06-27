@@ -12,20 +12,20 @@
 #### 1.1 EER Diagram with all assumptions
 #### 1.2 Crow Foot Notation for Relationship
 
-2. Relational Schema
-2.1 Data Format for Every Relation
+#### 2. Relational Schema
+#### 2.1 Data Format for Every Relation
 
-3. Normalization
+#### 3. Normalization
 
-4. SQL Statements
-4.1 Pre-Illumination
-4.2 Creation of Database with SQL Statements
-4.2.1 Table Creation
-4.2.2 A Database State
+#### 4. SQL Statements
+#### 4.1 Pre-Illumination
+#### 4.2 Creation of Database with SQL Statements
+#### 4.2.1 Table Creation
+#### 4.2.2 A Database State
 
-5. Query Scenario Design
+#### 5. Query Scenario Design
 
-6. Conclusion.
+#### 6. Conclusion.
 
 
 
