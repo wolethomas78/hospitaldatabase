@@ -7,6 +7,25 @@
 ## Problem Description
 #### The traditional Hospital Management System faces several difficulties, particularly with information retrieval. For instance, each patient's identification number must be unique, and this process is typically managed manually, resulting in transaction errors and making the management and security of patient information and diagnosis data both time-consuming and labor-intensive. This data model aims to enhance the hospital management system by simplifying the registration and maintenance of patient records, enabling staff to access and update information as necessary. Updates and changes can be made and stored in the databases simultaneously by administrators or receptionists.
 
+## Contents:
+#### 1. Conceptual Design
+#### 1.1 EER Diagram with all assumptions
+#### 1.2 Crow Foot Notation for Relationship
+
+2. Relational Schema
+2.1 Data Format for Every Relation
+
+3. Normalization
+
+4. SQL Statements
+4.1 Pre-Illumination
+4.2 Creation of Database with SQL Statements
+4.2.1 Table Creation
+4.2.2 A Database State
+
+5. Query Scenario Design
+
+6. Conclusion.
 
 
 
