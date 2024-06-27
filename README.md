@@ -1,2 +1,2 @@
 # hospitaldatabase
-Hospital Management System
+## Executive Summary
