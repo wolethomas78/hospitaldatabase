@@ -36,6 +36,8 @@
 ### 1.2 Crow Foot Notation for Relationship
 #### This section explores the min-max notations in the EER diagram that depict entity relationships. Table 1 offers a detailed explanation of Crow's Foot notations to enhance understanding and interpretation of these relationships within the relational database.
 
+![](crowfoot.drawio.png)
+
 
 
 
