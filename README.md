@@ -38,6 +38,19 @@
 
 ![](crowfoot.drawio.png)
 
+### 2 Relational Schema
+#### The diagram illustrates the relationships between tables by demonstrating how each foreign key links to the primary key of the parent table. It serves as a blueprint for understanding how information is interconnected and retrieved in the database. For instance, including Emp_ID in the Nurse and Doctor tables enables the retrieval of their respective information when Emp_ID is queried.
+
+![](sqlDiagram.png)
+
+
+
+
+
+
+
+
+
 
 
 
