@@ -49,6 +49,7 @@
 
 ![](ROOM.png)
 
+![](LAB.png)
 
 
 
