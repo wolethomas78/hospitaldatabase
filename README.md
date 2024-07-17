@@ -51,6 +51,15 @@
 
 ![](LAB.png)
 
+![](DOCTOR.png)
+
+![](DEPT.png)
+
+![](EMP.png)
+
+![](BILL1.png)
+![](BILL2.png)
+
 
 
 
