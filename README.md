@@ -43,8 +43,11 @@
 
 ![](sqlDiagram.png)
 
+### Data Format Showing ENTITY, ATTRIBUTES and DATA TYPE
 
 ![](patient.png)
+
+
 
 
 
