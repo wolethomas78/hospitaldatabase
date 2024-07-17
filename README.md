@@ -66,6 +66,19 @@
 ![](PRES1.png)
 ![](PRES2.png)
 ![](PRES3.png)
+![](PRES4.png)
+
+![](MED.png)
+
+![](MH.png)
+
+![](EC.png)
+
+![](APPT.png)
+
+![](NURSE.png)
+
+![](PAY.png)
 
 
 
