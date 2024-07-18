@@ -82,7 +82,7 @@
 
 ## 3.0 NORMALIZATION
 #### In this section, I will be applying the principles of normalization to ensure all the tables conform to 1ST Normal Form (1NF), 2ND Normal Form (2NF), and 3RD Normal Form (3NF).
-#### 3.1 Patient Table
+## 3.1 Patient Table
 ![](pat_id2.png)
 #### 1NF Compliance: The table is in the First Normal Form (1NF) because it contains only atomic (indivisible) values in each column, and there are no repeating groups. This means each cell only contains one data value
 
@@ -94,6 +94,8 @@
 
 #### patient_id → patient_lastName, patient_firstName, patient_PhoneNumber, patient_bloodType, email, sickness_type, gender, admission_date, discharge_date
 #### This set of functional dependencies implies that each patient’s name, phone number, blood type, email, gender, sickness, admission date, and discharge date are directly determined by their unique patient ID. As a result, the “Patient” table is in 3NF.
+
+![](RM.png)
 
 
 
