@@ -109,6 +109,9 @@
 
 #### This set of functional dependencies indicates that for each individual room, identified by “room_id,” the attributes “room_type,” “patient_id,” and “room_cost” are directly determined. There are no transitive dependencies, ensuring the “Room” table is well-structured and adheres to 3NF principles.
 
+## 3.3 Lab_Screen Table
+![](labs.png)
+
 
 
 
