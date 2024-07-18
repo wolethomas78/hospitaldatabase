@@ -80,8 +80,10 @@
 
 ![](PAY.png)
 
-## 3 NORMALIZATION
+## 3.0 NORMALIZATION
 #### In this section, I will be applying the principles of normalization to ensure all the tables conform to 1Normal Form (1NF), 2Normal Form (2NF), and 3Normal Form (3NF).
+#### 3.1 Patient Table
+![](pat_Id.png)
 
 
 
