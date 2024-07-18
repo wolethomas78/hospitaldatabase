@@ -125,7 +125,19 @@
 
 ## 3.4 Doctor Table
 ![](DR.png)
+#### 1NF Compliance: Every column in the table contains atomic (indivisible) values, meeting the requirements of 1NF.
 
+#### 2NF Compliance: The table goes beyond 1NF by having a primary key, “doctor_id,” which uniquely identifies each row. All non-key attributes are fully functionally dependent on the primary key, complying to the 2NF principles.
+
+## Functional Dependencies:
+
+#### doctor_id → qualifications, dept_id, designation, emp_id
+
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it does not contain any transitive dependencies. All non-key attributes are directly dependent on the primary key, “Doctor_id.”
+
+## 3.5 Employee & Dept Table
+![](empl.png)
+#### The above tables have no transitive or partial dependencies in any of the 2 table, So they conform to the 3NF normal form.
 
 
 
