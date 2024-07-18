@@ -109,9 +109,19 @@
 
 #### This set of functional dependencies indicates that for each individual room, identified by “room_id,” the attributes “room_type,” “patient_id,” and “room_cost” are directly determined. There are no transitive dependencies, ensuring the “Room” table is well-structured and adheres to 3NF principles.
 
-## 3.3 Lab_Screen Table
+## 3.3 Lab_Screening Table
 ![](labs.png)
+#### 1NF Compliance: The table is in the First Normal Form (1NF) as it contains atomic values in each column, and there are no repeating groups.
 
+#### 2NF Compliance: It is in the Second Normal Form (2NF) because it has a composite primary key consisting of “Lab_id” and “patient_id,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on this composite key.
+
+#### 3NF Compliance: The table is also in the Third Normal Form (3NF) because it has no transitive dependencies. All non-key attributes are directly dependent on the composite primary key, “Lab_id” and “patient_id.”
+
+## Functional Dependencies:
+
+#### (Lab_id, patient_id) → technician_id, doctor_id, test_cost, date
+
+#### This set of functional dependencies indicates that for each specific laboratory screening instance, which is identified by the combination of “Lab_id” and “patient_id,” the attributes “technician_id,” “doctor_id,” “test_cost,” and “date” are directly determined. This structure promotes data integrity and efficiency in managing lab screening records. As a result, the table is in 3NF.
 
 
 
