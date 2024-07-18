@@ -140,7 +140,7 @@
 #### The above tables have no transitive or partial dependencies in any of the 2 table, So they conform to the 3NF normal form.
 
 ## 3.6 Bill Table
-![](bily.png)
+![](BIL2.png)
 
 
 
