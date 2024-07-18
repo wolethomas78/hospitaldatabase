@@ -124,7 +124,7 @@
 #### This set of functional dependencies indicates that for each specific laboratory screening instance, which is identified by the combination of “Lab_id” and “patient_id,” the attributes “technician_id,” “doctor_id,” “test_cost,” and “date” are directly determined. This structure promotes data integrity and efficiency in managing lab screening records. As a result, the table is in 3NF.
 
 ## 3.4 Doctor Table
-!{}(DR.png)
+![](DR.png)
 
 
 
