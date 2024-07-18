@@ -95,7 +95,19 @@
 #### patient_id → patient_lastName, patient_firstName, patient_PhoneNumber, patient_bloodType, email, sickness_type, gender, admission_date, discharge_date
 #### This set of functional dependencies implies that each patient’s name, phone number, blood type, email, gender, sickness, admission date, and discharge date are directly determined by their unique patient ID. As a result, the “Patient” table is in 3NF.
 
+## 3.2 Room Table
 ![](RM.png)
+#### 1NF Compliance: The above table is in the First Normal Form (1NF) because it contains atomic values in each column, and there are no repeating groups.
+
+#### 2NF Compliance: It is also in the Second Normal Form (2NF) since it has a primary key, “room_id,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on the primary key.
+
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it does not contain any transitive dependencies. All non-key attributes are directly dependent on the primary key, “room_id.”
+
+### Functional Dependencies:
+
+#### room_id → room_type, patient_id, room_cost
+
+#### This set of functional dependencies indicates that for each individual room, identified by “room_id,” the attributes “room_type,” “patient_id,” and “room_cost” are directly determined. There are no transitive dependencies, ensuring the “Room” table is well-structured and adheres to 3NF principles.
 
 
 
