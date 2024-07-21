@@ -153,6 +153,30 @@
 
 #### This set of functional dependencies indicates that for each payment and associated patient (identified by “bill_id” and “policy_number”), the attributes “date,” “room_cost,” “test_cost,” “othercharges,” “prescription_cost,” and “total” are directly determined. There are no transitive dependencies, ensuring that the “Bill” table is well-structured and adheres to 3NF principles.
 
+## 3.7 Iinsurance Table
+![](INS.png)
+#### 1NF Compliance: The table is in the First Normal Form (1NF) because it contains atomic values in each column, and there are no repeating groups.
+
+#### 2NF Compliance: It is also in the Second Normal Form (2NF) since it has a primary key, “policy_number,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on the primary key.
+
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it does not contain any transitive dependencies. All non-key attributes are directly dependent on the primary key, “policy_number which is the PRIMARY KEY.”
+
+### Functional Dependencies:
+
+#### policy_number → patient_ID, insurance_code, policy_startDate, policy_provider, insurance_plan, company_pay, insurance_cover, maternity, dental, optical
+
+#### This set of functional dependencies indicates that for each patient and their insurance information, identified by “policy_number,” the attributes like “patient_ID,” “insurance_code,” “policy_startDate,” “policy_provider,” “insurance_plan,” “company_pay,” “insurance_cover,” “maternity,” “dental,” and “optical” are directly determined. There are no transitive dependencies, ensuring that the “Insurance” table is well-structured and adheres to 3NF principles.
+
+## 3.8 Medicine Table
+![](MED1.png)
+#### 1NF Compliance: All attributes must be atomic, which means that they cannot be further divided. In this table, the attributes appear atomic, so it satisfies 1NF.
+
+#### 2NF Compliance: For a table to be in 2NF, it must first be in 1NF. Then, it must have no partial dependencies. A partial dependency occurs when an attribute depends on only a part of the candidate key.
+
+#### Assuming that medicine_id is the candidate key, the Patient_id attribute appears to depend on the candidate key (medicine_id), indicating that it associates a patient with a specific medicine. This might be a partial dependency issue.
+
+#### The presence of Patient_id in the “Medicine” table suggests that it might have a functional dependency on the patient for whom the medicine is prescribed. This indicates a potential partial dependency, which would mean that the table is not in 2NF. To bring the table to 2NF and resolve this issue, we created a separate table for the prescription or association between patients and medicines.
+
 
 
 
