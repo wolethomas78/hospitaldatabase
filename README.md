@@ -141,6 +141,18 @@
 
 ## 3.6 Bill Table
 ![](BIL2.png)
+#### 1NF Compliance: The table is in the First Normal Form (1NF) because it contains atomic values in each column, and there are no repeating groups.
+
+#### 2NF Compliance: It is also in the Second Normal Form (2NF) since it has a primary key, “bill_id,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on the primary key.
+
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it does not contain any transitive dependencies. All non-key attributes are directly dependent on the primary key, “bill_id” and “policy_number.”
+
+## Functional Dependencies:
+
+### bill_id, policy_number → date, room_cost, test_cost, othercharges, prescription_cost, totalremaining_balance
+
+#### This set of functional dependencies indicates that for each payment and associated patient (identified by “bill_id” and “policy_number”), the attributes “date,” “room_cost,” “test_cost,” “othercharges,” “prescription_cost,” and “total” are directly determined. There are no transitive dependencies, ensuring that the “Bill” table is well-structured and adheres to 3NF principles.
+
 
 
 
