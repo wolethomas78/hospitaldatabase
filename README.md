@@ -177,14 +177,41 @@
 
 #### The presence of Patient_id in the “Medicine” table suggests that it might have a functional dependency on the patient for whom the medicine is prescribed. This indicates a potential partial dependency, which would mean that the table is not in 2NF. To bring the table to 2NF and resolve this issue, we created a separate table for the prescription or association between patients and medicines.
 
+### 3.9 Prescrition Table
+![](PRESC.png)
+## Functional Dependencies:
+#### prescription_id -> medicine_id, patient_id, date, dosage, doctor_id medicine_id -> name, medicine_cost, quantity
+#### medicine_id -> name, medicine_cost, quantity
 
+#### 3NF Compliance: Both tables are in the Third Normal Form (3NF) because they meet the requirements of 1NF (atomic attributes), 2NF (no partial dependencies), and 3NF (no transitive dependencies). In these tables, attributes depend directly on the candidate keys, and there are no indirect dependencies.
 
+### 4.0 Medical History Table
+![](meh.png)
+#### 1NF Compliance: The table is in the First Normal Form (1NF) because it contains atomic values in each column, and there are no repeating groups.
 
+#### 2NF Compliance: It is also in the Second Normal Form (2NF) since it has a primary key, “record_id,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on the primary key.
 
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it does not contain any transitive dependencies. All non-key attributes are directly dependent on the primary key, “record_id.”
 
+### Functional Dependencies:
 
+#### record_id → allergies, underline_conditions
 
+#### This set of functional dependencies indicates that for each patient, identified by “record_id,” the attributes “allergies” and “underline_conditions” are directly determined. There are no transitive dependencies, ensuring that the “Medical History” table is well-structured and adheres to 3NF principles.
 
+### 4.1
+![](ECON.png)
+#### 1NF Compliance: The table is in the First Normal Form (1NF) as it contains atomic values in each column, and there are no repeating groups.
+
+#### 2NF Compliance: It is also in the Second Normal Form (2NF) because it has a primary key, “contact_id,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on the primary key.
+
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it has no transitive dependencies. All non-key attributes directly depend on the primary key, “contact_id,” and “patient_id.”
+
+### Functional Dependencies:
+
+#### contact_id → contact_name, contact_number, relation, patient_id
+
+#### This set of functional dependencies indicates that for each unique emergency contact identified by “contact_id,” the attributes “contact_name,” “contact_number,” “relation,” and “patient_id” are directly determined.
 
 
 
