@@ -199,7 +199,7 @@
 
 #### This set of functional dependencies indicates that for each patient, identified by “record_id,” the attributes “allergies” and “underline_conditions” are directly determined. There are no transitive dependencies, ensuring that the “Medical History” table is well-structured and adheres to 3NF principles.
 
-### 4.1
+### 4.1 Emergency Contact Table
 ![](ECON.png)
 #### 1NF Compliance: The table is in the First Normal Form (1NF) as it contains atomic values in each column, and there are no repeating groups.
 
@@ -212,6 +212,22 @@
 #### contact_id → contact_name, contact_number, relation, patient_id
 
 #### This set of functional dependencies indicates that for each unique emergency contact identified by “contact_id,” the attributes “contact_name,” “contact_number,” “relation,” and “patient_id” are directly determined.
+
+### 4.2 Appointment Table
+
+![](APT.png)
+#### 1NF Compliance: The table is in the First Normal Form (1NF) because it contains atomic values in each column, and there are no repeating groups.
+
+#### 2NF Compliance: It is also in the Second Normal Form (2NF) since it has a primary key, “Appt_id,” which uniquely identifies each row, and all non-key attributes are fully functionally dependent on the primary key.
+
+#### 3NF Compliance: The table satisfies the Third Normal Form (3NF) because it does not contain any transitive dependencies. All non-key attributes are directly dependent on the primary keys, “Appt_id,” “Doctor_ID,” and “Patient_id.”
+
+### Functional Dependencies:
+
+#### Appt_id → Scheduled_on, Date, Time, Doctor_ID, Patient_id Doctor_ID → Doctor_name, Doctor_specialization Patient_id → Patient_name, Patient_date_of_birth
+
+#### This set of functional dependencies indicates that for each appointment, identified by “Appt_id,” the attributes “Scheduled_on,” “Date,” “Time,” “Doctor_ID,” and “Patient_id” are directly determined. There are no transitive dependencies, ensuring that the “Appointment” table is well-structured and adheres to 3NF principles.
+
 
 
 
