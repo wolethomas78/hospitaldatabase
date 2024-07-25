@@ -262,19 +262,7 @@
 ### 5.1 Pre-Illumination
 #### This report outlines the implementation phase of the database project, focusing on the creation of the database, table setup, data population, and SQL queries. Our project utilizes the MySQL database management system. Part 1 is the creation of the database, including tables, all other structures as well as constraints, data type and format, Part 2 is the query scenario design and implementation along with the results. Part 3 is our conclusion of what is included in this report.
 
-### 5.2 Creation of Database with SQL Statements
-### 5.2.1 Table Creation
-### CREATE TABLE patient(patient_ID INT,
-### patient_lastName VARCHAR (20) NOT NULL,
-### patient_firstName VARCHAR (20) NOT NULL,
-### patient_phoneNumber INT (15) NOT NULL,
-### patient_bloodType VARCHAR (10) NOT NULL,
-### email VARCHAR (20) NOT NULL,
-### sicknes_type VARCHAR (10) NOT NULL,
-### gender VARCHAR (5),
-### admision_date DATE,
-### discharge_date DATE,
-### PRIMARY KEY(patient_ID));
+
 
 
 
