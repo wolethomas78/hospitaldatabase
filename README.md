@@ -262,6 +262,8 @@
 ### 5.1 Pre-Illumination
 #### This report outlines the implementation phase of the database project, focusing on the creation of the database, table setup, data population, and SQL queries. Our project utilizes the MySQL database management system. Part 1 is the creation of the database, including tables, all other structures as well as constraints, data type and format, Part 2 is the query scenario design and implementation along with the results. Part 3 is our conclusion of what is included in this report.
 
+![](hsmsql.png)
+
 
 
 
